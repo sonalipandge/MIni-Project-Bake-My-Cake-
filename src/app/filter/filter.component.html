@@ -1,0 +1,23 @@
+<div class="filter-container">
+  Filter:-
+  <mat-button-toggle-group [(ngModel)]="cakeName" class="filter-options">
+    <mat-button-toggle
+      value="Cakes"
+      class="filter-button"
+      (click)="filterMethod()"
+      >Cakes</mat-button-toggle
+    >
+    <mat-button-toggle
+      value="Cookies"
+      class="filter-button"
+      (click)="filterMethod()"
+      >Cookies</mat-button-toggle
+    >
+    <mat-button-toggle
+      value="Brownies"
+      class="filter-button"
+      (click)="filterMethod()"
+      >Brownies</mat-button-toggle
+    >
+  </mat-button-toggle-group>
+</div>

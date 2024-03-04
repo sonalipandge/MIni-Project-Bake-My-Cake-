@@ -1,0 +1,18 @@
+#login-form {
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid hsl(0, 91%, 46%);
+  border-radius: 6px;
+  border-style: solid;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  background-color: aquamarine;
+
+  width: 30%;
+  margin: 30px 10px;
+  justify-content: space-between;
+  margin-right: 300px;
+  margin-left: 450px;
+  padding: 10px;
+  justify-content: center;
+}

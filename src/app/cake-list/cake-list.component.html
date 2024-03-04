@@ -1,0 +1,11 @@
+<div>
+  <app-search
+    id="search-cake-panel"
+    (searchTextChanged)="onSearchTextChanged($event)"
+  ></app-search>
+  <app-filter
+    id="filter-cake-panel"
+    (filterTextChanged)="onFilterTextChanged($event)"
+  ></app-filter>
+</div>
+<app-cake-card *ngFor="let cake of cakes" [cake]="cake"> </app-cake-card>

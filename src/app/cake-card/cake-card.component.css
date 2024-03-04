@@ -1,0 +1,87 @@
+/* cake-card.component.css */
+
+.cake-card {
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid hsl(0, 91%, 46%);
+  border-radius: 6px;
+  border-style: solid;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  background-color: aquamarine;
+
+  width: 25%;
+  margin: 30px 10px;
+  justify-content: space-between;
+  margin-right: 30px;
+  margin-left: 70px;
+ 
+  
+
+  /* Remove height property */
+}
+
+.cake-card:hover {
+  transform: translateY(-5px);
+}
+.cake-image img {
+  width: 340px;
+  height: 200px;
+
+  border-radius: 5px 5px 0 0;
+}
+
+.cake-details {
+  padding: 10px;
+}
+
+.cake-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.cake-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cake-price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ff5722; /* Orange color for the price */
+}
+
+.cake-rating {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #999;
+}
+
+.cake-rating img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.cake-actions {
+  padding: 10px;
+  text-align: center;
+}
+
+button[mat-icon-button] {
+  background-color: #000000bb; /* Orange color for the cart button */
+  color: #fff; /* White text color for the button */
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+button[mat-icon-button]:hover {
+  background-color: #f44336; /* Darker orange on hover */
+}

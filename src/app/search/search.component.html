@@ -1,0 +1,20 @@
+<div id="search">
+  Search:-
+  <mat-form-field appearance="fill">
+    <input
+      matInput
+      type="text"
+      name="searchCake"
+      id="searchCake"
+      placeholder="Enter cake name"
+      name="cakeName"
+      [(ngModel)]="cakeName"
+    />
+  </mat-form-field>
+  <button mat-icon-button (click)="searchCake()">
+    <mat-icon>search</mat-icon>
+  </button>
+  <button mat-icon-button (click)="clearCake()">
+    <mat-icon>clear</mat-icon>
+  </button>
+</div>

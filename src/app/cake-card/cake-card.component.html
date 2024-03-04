@@ -1,0 +1,28 @@
+<div class="cake-card">
+  <div class="cake-image">
+    <img
+      [src]="'../../assets/images/' + cake.image + '.jpg'"
+      alt="{{ cake.cakeName }}"
+    />
+  </div>
+  <div class="cake-details">
+    <h2 class="cake-title">{{ cake.cakeName }}</h2>
+    <div class="cake-info">
+      <span class="cake-price">Rs {{ cake.cakePrice }}</span>
+      <div class="cake-rating">
+        <span>Cake Rating:</span>
+        <img [src]="'../../assets/images/rating.jpg'" alt="Rating" />
+        <span>{{ cake.rating }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="cake-actions">
+    <button
+      mat-icon-button
+      [routerLink]="'/cake-cart/' + cake.id"
+      matTooltip="Add to Cart"
+    >
+      <mat-icon color="primary">shopping_cart</mat-icon>
+    </button>
+  </div>
+</div>

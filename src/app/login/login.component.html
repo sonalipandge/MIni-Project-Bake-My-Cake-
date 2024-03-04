@@ -1,0 +1,20 @@
+<mat-toolbar id="header" color="primary">
+  <h1>Cake Shop Login</h1>
+</mat-toolbar>
+<div id="login-form">
+  <h3>If you are a cake order, enter your Cake Order Code</h3>
+  <mat-form-field appearance="fill">
+    <mat-label>Enter Cake Order Code</mat-label>
+    <input
+      matInput
+      type="password"
+      name="cakeOrderCode"
+      [(ngModel)]="cakeOrderCode"
+      placeholder="Cake Order Code"
+    />
+  </mat-form-field>
+  <button mat-button color="primary" (click)="validateCakeOrderCode()">
+    Submit
+  </button>
+  <h3>If you are a Visitor, <a routerLink="">click here</a></h3>
+</div>
